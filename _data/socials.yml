@@ -1,0 +1,8 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: nsankaran@usfca.edu # your email address
+scholar_userid: ES-FadAAAAAJ # your Google Scholar ID
+linkedin_username: narayansankaran # your LinkedIn username
+work_url: https://www.usfca.edu/faculty/narayan-sankaran # faculty profile page
+rss_icon: true # comment this line to hide the RSS icon
