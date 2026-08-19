@@ -63,14 +63,17 @@ mkdir -p .github/workflows
 ```
 
 At this point your repo folder contains only `lab/` and `.github/workflows/`, both empty — that's expected. You'll populate:
+
 - The **repo root** with al-folio's files in Step 2 (this is where al-folio's own template contents get copied in — directly into `narayansankaran.com/`, not into a further subfolder)
 - **`lab/`** with the Minimal Mistakes starter files in Step 3
 - **`.github/workflows/deploy.yml`** with the build workflow in Step 4
 
 A quick sanity check before moving on — confirm you're set up correctly:
+
 ```bash
 git remote -v
 ```
+
 This should print your GitHub repo URL twice (for fetch and push). If it doesn't, double check you cloned the right repo in step 1b.
 
 ---
@@ -94,15 +97,16 @@ rsync -av --exclude='.git' /tmp/al-folio-template/ ./
 You're still inside `narayansankaran.com/` at this point — `./` refers to your repo root. `rsync` will copy everything over, merging with the `lab/` and `.github/workflows/` folders you already created.
 
 Clean up the temp clone once the copy is done:
+
 ```bash
 rm -rf /tmp/al-folio-template
 ```
 
-*(No `rsync` on your system? On Mac it's preinstalled; on most Linux distros too. On Windows/WSL you can install it with `sudo apt install rsync`, or substitute `cp -r /tmp/al-folio-template/* /tmp/al-folio-template/.[!.]* ./` as a rougher equivalent.)*
+_(No `rsync` on your system? On Mac it's preinstalled; on most Linux distros too. On Windows/WSL you can install it with `sudo apt install rsync`, or substitute `cp -r /tmp/al-folio-template/_ /tmp/al-folio-template/.[!.]_ ./` as a rougher equivalent.)_
 
 ### 2b. Remove al-folio's own deploy workflow
 
-al-folio ships with its own `.github/workflows/deploy.yml` for deploying *itself* as a standalone site. Since we're writing a custom combined-build workflow in Step 4, delete al-folio's version now so the two don't conflict:
+al-folio ships with its own `.github/workflows/deploy.yml` for deploying _itself_ as a standalone site. Since we're writing a custom combined-build workflow in Step 4, delete al-folio's version now so the two don't conflict:
 
 ```bash
 rm -f .github/workflows/deploy.yml
@@ -119,6 +123,7 @@ bundle install
 If this fails on a Ruby version mismatch, al-folio's README will specify the Ruby version it expects — install that version (e.g. via `rbenv` or `rvm`) and retry.
 
 Open the root `_config.yml` and fill in the basics for now (you'll set `url` properly in Step 7 once the domain is ready — a placeholder like `https://narayansankaran.com` is fine to put in already):
+
 - `first_name`, `last_name`
 - `email`
 - `description`
@@ -160,7 +165,7 @@ The Minimal Mistakes starter also ships a `.github/workflows/` folder of its own
 rm -rf lab/.github
 ```
 
-Your single combined workflow at the repo root (`.github/workflows/deploy.yml`, written in Step 4) handles building *both* sites, so `lab/` doesn't need its own.
+Your single combined workflow at the repo root (`.github/workflows/deploy.yml`, written in Step 4) handles building _both_ sites, so `lab/` doesn't need its own.
 
 ### 3c. Install dependencies
 
@@ -174,18 +179,22 @@ If you hit a Ruby/gem version conflict with the al-folio install from Step 2c, t
 ### 3d. Set the baseurl and basic config
 
 While still in `lab/`, open `_config.yml` and set:
+
 ```yaml
 url: "https://narayansankaran.com"
 baseurl: "/sankaran-lab"
 ```
+
 This tells Jekyll that every internal link on the lab site should be prefixed with `/sankaran-lab`, so links resolve correctly once nested under your main domain. Fill in `title`, `description`, and the rest of the basics too.
 
 ### 3e. Test it locally
 
 From inside `lab/`:
+
 ```bash
 bundle exec jekyll serve --baseurl ""
 ```
+
 (The `--baseurl ""` override lets you preview at `http://localhost:4000` directly without needing the `/sankaran-lab` prefix locally. Omit the flag if you specifically want to test the prefix behavior.)
 
 Confirm the Minimal Mistakes homepage loads, then stop the server with `Ctrl+C`.
@@ -195,6 +204,7 @@ Confirm the Minimal Mistakes homepage loads, then stop the server with `Ctrl+C`.
 Complete `lab/_config.yml`, `lab/_data/navigation.yml`, and content pages (Research, People, Publications, Code of Conduct) exactly as described in the earlier guide — same process, just nested in this subfolder. Use Claude the same way: paste each file and describe your lab to get drafted content.
 
 At this point, commit your progress before moving on:
+
 ```bash
 cd ..
 git add .
@@ -236,7 +246,7 @@ jobs:
       - name: Set up Ruby (personal site)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
           bundler-cache: true
 
       - name: Build personal site
@@ -248,7 +258,7 @@ jobs:
       - name: Set up Ruby (lab site)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: "3.1"
           bundler-cache: true
           working-directory: lab
 
@@ -329,6 +339,7 @@ DNS propagation can take anywhere from minutes to ~24 hours.
 ## Step 8: Verify everything
 
 Once DNS resolves:
+
 - `https://narayansankaran.com` → al-folio personal site
 - `https://narayansankaran.com/sankaran-lab/` → Minimal Mistakes lab site
 - Click the "Lab" tab from your homepage nav and confirm it lands correctly
