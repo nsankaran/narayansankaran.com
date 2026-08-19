@@ -1,0 +1,75 @@
+name: Build and Deploy Combined Site
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+env:
+  LANG: en_US.UTF-8
+  LC_ALL: en_US.UTF-8
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # --- Build al-folio (personal site) ---
+      - name: Set up Ruby (personal site)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+
+      - name: Set up Python (jupyter notebook rendering)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install build prerequisites
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert jupyter
+
+      - name: Build personal site
+        run: bundle exec jekyll build --destination _site
+
+      # --- Build Minimal Mistakes (lab site) ---
+      - name: Set up Ruby (lab site)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1"
+          bundler-cache: true
+          working-directory: lab
+
+      - name: Build lab site
+        working-directory: lab
+        run: bundle exec jekyll build --destination ../_site/sankaran-lab
+
+      # --- Deploy combined output ---
+      - name: Upload combined site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
