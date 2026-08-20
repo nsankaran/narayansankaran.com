@@ -3,7 +3,7 @@ layout: page
 title: research
 permalink: /sankaran-lab/
 nav: true
-nav_order: 9
+nav_order: 1
 ---
 
 <!-- This page's content is only visible during a standalone `bundle exec jekyll serve` of the
