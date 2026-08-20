@@ -1,189 +1,76 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  name: Narayan Sankaran
+  label: Assistant Professor, Department of Neuroscience, University of San Francisco
+  email: nsankaran@usfca.edu
+  website: https://narayansankaran.com
+  summary: Assistant Professor in the Department of Neuroscience at the University of San Francisco, studying how the human brain enables music perception.
 
   sections:
+    Appointments:
+      - bullet: "**2024–present** — Assistant Professor (tenure-track), University of San Francisco, USA — *Department of Neuroscience, College of Arts & Sciences*"
+      - bullet: "**2023–2024** — Postdoctoral Fellow, University of California, Berkeley, USA — *Kavli Center for Ethics, Science, and the Public*"
+      - bullet: "**2018–2022** — Postdoctoral Fellow, University of California, San Francisco, USA — *Department of Neurological Surgery / Center for Integrative Neuroscience* — Advisor: Edward Chang"
+      - bullet: "**2016** — Research Intern, Starkey Hearing Research Center, Berkeley, USA"
+      - bullet: "**2016** — Research Intern, Oculus Virtual Reality, Redmond, USA"
+      - bullet: "**2010–2011** — Research Assistant, Lawrence Berkeley National Labs, Berkeley, CA — *Berkeley Center for Cosmological Physics*"
+
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: University of Sydney
+        location: Sydney, Australia
+        area: Neuroscience
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+        start_date: 2012
+        end_date: 2018
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Thesis: *The structure of cortical representations of music and speech*"
+          - "Supervisors: Simon Carlile and William Forde Thompson"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: University of California, Berkeley
+        location: Berkeley, CA, USA
+        area: Physics (Music minor)
+        studyType: B.A.
+        start_date: 2006
+        end_date: 2010
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+    Selected Publications:
+      - bullet: "**Narayan Sankaran** & Winston Chiong (In press). Speech restoration & mental surveillance as conflicting ethical concerns in neural speech-decoding research. *Hastings Center Report*. [DOI: 10.1002/hast.70090](https://doi.org/10.1002/hast.70090)"
+      - bullet: "**Narayan Sankaran**, Matthew Leonard, Frederic Theunissen, & Edward Chang (2024). Encoding of melody in the human auditory cortex. *Science Advances*, 10. [DOI: 10.1126/sciadv.adk0010](https://doi.org/10.1126/sciadv.adk0010)"
+      - bullet: "**Narayan Sankaran**, David Moses, Winston Chiong, and Edward Chang (2023). Recommendations for promoting user agency in the design of speech neuroprostheses. *Frontiers in Human Neuroscience*, 17: 1298129. [DOI: 10.3389/fnhum.2023.1298129](https://doi.org/10.3389/fnhum.2023.1298129)"
+      - bullet: "Perry, Gemma, Vince Polito, **Narayan Sankaran**, & William Forde Thompson (2022). How Chanting Relates to Cognitive Function, Altered States and Quality of Life. *Brain Sciences*, 12(11): 1456."
+      - bullet: "Ashlyn Schmitgen, Jeremy Saal, **Narayan Sankaran**, Maansi Desai, et al. (2021). Musical Hallucinations in Chronic pain: the anterior cingulate cortex regulates internally generated percepts. *Frontiers in Neurology*. [DOI: 10.3389/fneur.2021.669172](https://doi.org/10.3389/fneur.2021.669172)"
+      - bullet: "**Narayan Sankaran**, Thomas Carlson, & William Forde Thompson (2020). The rapid emergence of musical pitch structure in human cortex. *Journal of Neuroscience*. [DOI: 10.1523/JNEUROSCI.1399-19.2020](https://doi.org/10.1523/JNEUROSCI.1399-19.2020)"
+      - bullet: "**Narayan Sankaran**, William Forde Thompson, Simon Carlile, & Thomas Carlson (2018). Decoding the dynamic representation of musical pitch from human brain activity. *Scientific Reports*. [DOI: 10.1038/s41598-018-19222-3](https://doi.org/10.1038/s41598-018-19222-3)"
+      - bullet: "**Narayan Sankaran**, Jayaganesh Swaminathan, Christophe Micheyl, Sridhar Kalluri, & Simon Carlile (2018). Tracking the dynamic representation of consonants from auditory periphery to cortex. *The Journal of the Acoustical Society of America*. [DOI: 10.1121/1.5065492](https://doi.org/10.1121/1.5065492)"
+      - bullet: "Heather Kelly, Gaven Lin, **Narayan Sankaran**, Jing Xia, Sridhar Kalluri, & Simon Carlile (2017). Development and evaluation of a mixed gender, multi-talker matrix sentence test in Australian English. *International Journal of Audiology*. [DOI: 10.1080/14992027.2016.1236415](https://doi.org/10.1080/14992027.2016.1236415)"
+      - bullet: "**Narayan Sankaran**, Johahn Leung, & Simon Carlile (2014). Effects of virtual speaker density and room reverberation on spatiotemporal thresholds of audio-visual motion coherence. *PLOS ONE*. [DOI: 10.1371/journal.pone.0108437](https://doi.org/10.1371/journal.pone.0108437)"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+    Selected Conferences & Talks:
+      - bullet: '**2025** — Panel Speaker, "Brain Days", 80th United Nations General Assembly. New York, NY.'
+      - bullet: '**2024** — *"Encoding mechanisms underlying perception of melody"*, talk presented at USC Hearing & Communication Neuroscience Seminar. Los Angeles, CA.'
+      - bullet: '**2024** — *"Encoding of melody in the human auditory cortex"*, talk presented at the 10th Annual NIH BRAIN Initiative Conference. Bethesda, MD.'
+      - bullet: '**2024** — *"Music perception recruits domain-general and music-specific encoding mechanisms"*, talk presented virtually at Trinity College Dublin, Ireland.'
+      - bullet: '**2024** — *"Mechanisms of auditory encoding for music"*, talk presented at University of Texas Medical Center, Houston, TX.'
+      - bullet: '**2022** — *"Encoding of Melody in the Human Superior Temporal Gyrus"*, talk presented virtually at the Society for Music Perception & Cognition meeting, Portland, OR.'
+      - bullet: '**2022** — Keynote Speaker, *"Mechanisms of auditory encoding for music"*, Cognition and Sensory Processing Workshop (CNSP). Virtual meeting.'
+      - bullet: '**2022** — *"Music specializations of the human auditory cortex"*, Electronic Auditory Research Seminar Series (EARS). Virtual meeting.'
+      - bullet: '**2021** — *"Intracranial recordings reveal music-specific encoding mechanisms in auditory cortex"*, poster presented virtually at Neurosciences & Music VII, Aarhus, Denmark.'
+      - bullet: '**2021** — Selected Early Career Spotlight, *"Intracranial recordings reveal the encoding of melody in the human superior temporal gyrus"*, talk presented virtually at Advances and Perspectives in Auditory Neuroscience (APAN). Virtual meeting.'
+      - bullet: '**2019** — *"Decoding MEG responses to musical pitch reveals the dynamic emergence of tonal structure in human cortex"*, talk presented at the Acoustical Society of America meeting, Louisville, KY.'
+      - bullet: '**2019** — *"Structure of cortical representations of speech & music"*, talk presented at the CCRMA Hearing Seminar Series, Stanford University, Stanford, CA.'
+      - bullet: '**2016** — *"Decoding the tonal hierarchy"*, talk presented at the International Conference on Music Perception & Cognition, San Francisco, CA.'
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+    Grants and Awards:
+      - bullet: "**2026–present** — NIH UG3/UH3, Multisite closed loop DBS for chronic pain. Role: Key personnel"
+      - bullet: "**2024–present** — University of San Francisco Faculty Development Fund, $16,000"
+      - bullet: "**2024–2025** — Civic Science Fellowship, Rita Allen Foundation, $112,000"
+      - bullet: "**2024** — Poster Prize, International Neuroethics Society"
+      - bullet: "**2021** — Early Career Researcher Award, Advances and Perspectives in Auditory Neuroscience (APAN)"
+      - bullet: "**2021** — Selected Early Career Panelist, Symposium for Cognitive Auditory Neuroscience"
+      - bullet: "**2020** — Berkelhammer Postdoctoral Award, University of California, San Francisco, $2,000"
+      - bullet: "**2014** — Australian Postgraduate Research Award, University of Sydney, $25,000"
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Service:
+      - bullet: "**Volunteer teaching:** Mount Tamalpais University at San Quentin State Prison; Oasis for Girls (San Francisco)"
+      - bullet: "**Scientific Advisory Boards:** NeuroArts Blueprint Initiative; Implanted Brain-Computer Interface Collaborative Community"
+      - bullet: "**Ad-hoc Peer Reviewing:** Proceedings of the National Academy of Sciences, PLOS Computational Biology, Journal of Cognitive Neuroscience, Ear and Hearing, European Journal of Neuroscience, Frontiers in Neural Systems, PLOS One, Frontiers in Neuroscience, Music Perception"
+      - bullet: "**Memberships:** Society for Neuroscience, Society for Music Perception and Cognition, International Neuroethics Society, Berkeley Ethics and Regulation Group for Innovative Technologies"
