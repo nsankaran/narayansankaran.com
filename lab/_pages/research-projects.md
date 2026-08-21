@@ -4,8 +4,8 @@ title: "Research Projects"
 author_profile: false
 classes: wide
 feature_row:
-  - image_path: /assets/images/projects/placeholder-1.svg
-    alt: "Placeholder image for Neural encoding of melody"
+  - image_path: /assets/images/projects/neural-encoding-melody-banner.jpg
+    alt: "Brain surface map and electrode response heatmaps showing neural encoding of pitch, pitch-change, and melodic expectation"
     title: "Neural encoding of melody"
     excerpt: "What information is represented in the brain when we listen to melody, and how do these representations emerge from sound striking the ear? We combine data-driven machine-learning approaches with intracranial and scalp-based EEG recordings of brain activity to answer these questions."
   - image_path: /assets/images/projects/music-specializations-banner.jpg
