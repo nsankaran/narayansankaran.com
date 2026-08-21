@@ -66,6 +66,42 @@
   .pi-bio h3 {
     margin-top: 0;
   }
+
+  /* Contact page: map + address side by side, and a "pop out" shadow on the
+     recruitment brochure image */
+  .location-block {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1.5em 0 2em;
+  }
+
+  .location-map {
+    flex: 2;
+    min-width: 300px;
+    height: 350px;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  .location-address {
+    flex: 1;
+    min-width: 240px;
+    font-size: 1.05em;
+    line-height: 1.6;
+  }
+
+  .brochure-image {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    margin: 2em auto;
+    border-radius: 6px;
+    box-shadow:
+      0 20px 40px rgba(0, 0, 0, 0.3),
+      0 6px 16px rgba(0, 0, 0, 0.2);
+  }
 </style>
 
 <!-- end custom head snippets -->
