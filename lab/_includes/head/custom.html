@@ -42,6 +42,30 @@
     float: none;
     width: 100%;
   }
+
+  /* Principal Investigator profile on the People page: photo + bio side by side */
+  .pi-profile {
+    display: flex;
+    gap: 2.5em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+  }
+
+  .pi-photo {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+  }
+
+  .pi-bio {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .pi-bio h3 {
+    margin-top: 0;
+  }
 </style>
 
 <!-- end custom head snippets -->
