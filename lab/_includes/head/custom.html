@@ -32,6 +32,16 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* Minimal Mistakes' `wide` class only zeroes the padding it reserves for a
+     right-hand table-of-contents sidebar - `.page` still keeps its reduced
+     width and floats right, so sidebar-less "wide" pages end up hugging the
+     right edge with the leftover width as empty space on the left. Actually
+     fill the container so content is centered. */
+  .wide .page {
+    float: none;
+    width: 100%;
+  }
 </style>
 
 <!-- end custom head snippets -->
