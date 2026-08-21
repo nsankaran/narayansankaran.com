@@ -8,6 +8,10 @@ feature_row:
     alt: "Placeholder image for Neural encoding of melody"
     title: "Neural encoding of melody"
     excerpt: "What information is represented in the brain when we listen to melody, and how do these representations emerge from sound striking the ear? We combine data-driven machine-learning approaches with intracranial and scalp-based EEG recordings of brain activity to answer these questions."
+  - image_path: /assets/images/projects/music-specializations-banner.jpg
+    alt: "Scatter plot comparing music and speech neural response selectivity across recording sites"
+    title: "Music specializations in the human brain"
+    excerpt: "When we listen to music, how much of what the brain does is specific to music alone? How much of music perception leverages general-purpose sound processing mechanisms that also serve other domains - like speech? We directly compare auditory processing across different listening domains to answer this question."
   - image_path: /assets/images/projects/placeholder-2.svg
     alt: "Placeholder image for Neural basis of musical pleasure"
     title: "Neural basis of musical pleasure"
