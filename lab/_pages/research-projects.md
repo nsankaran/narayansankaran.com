@@ -13,9 +13,9 @@ feature_row:
     title: "Music specializations in the human brain"
     excerpt: "When we listen to music, how much of what the brain does is specific to music alone? How much of music perception leverages general-purpose sound processing mechanisms that also serve other domains - like speech? We directly compare auditory processing across different listening domains to answer this question."
   - image_path: /assets/images/projects/placeholder-2.svg
-    alt: "Placeholder image for Neural basis of musical pleasure"
-    title: "Neural basis of musical pleasure"
-    excerpt: "Why does music bring some people deep pleasure while leaving others—who perceive it just as well—largely unmoved? We study this variation by asking whether it originates in how faithfully the auditory cortex encodes musical information."
+    alt: "Placeholder image for Neural encoding of sound and musical pleasure"
+    title: "Neural encoding of sound and musical pleasure"
+    excerpt: "Why does music bring some people deep pleasure while leaving others largely unmoved? We examine whether variations in music reward sensitivity can be explained by how faithfully frontotemporal circuits encode structural features of sound itself. Understanding the neural basis of musical pleasure and its individual variability may unlock the precision-use and personalization of music-based treatments."
   - image_path: /assets/images/projects/placeholder-3.svg
     alt: "Placeholder image for Music processing in Disorders of Consciousness"
     title: "Music processing in Disorders of Consciousness"
